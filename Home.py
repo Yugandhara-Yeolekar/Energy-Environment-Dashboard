@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Home", layout="wide")
 
 st.markdown("<h1 style='text-align: center;'>Visualizing Energy and Environmental Data: Insights into Renewables, Climate, and Emissions</h1>", unsafe_allow_html=True)
 st.markdown("## Understanding the Global Energy and Climate Landscape")
