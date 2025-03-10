@@ -10,8 +10,7 @@ This interactive **Streamlit** dashboard visualizes key trends in **renewable en
 - 🗺 **Global Power Plant Database** – Interactive map of major power plants categorized by fuel type and capacity.
 
 ## **Live Dashboard**
-[Click here to view the deployed app on Streamlit](#)  
-*(Replace `#` with the actual deployment link once available.)*
+[Click here to view the deployed app on Streamlit](https://energy-environment-dashboard.streamlit.app/)  
 
 ## **Installation & Usage**
 
