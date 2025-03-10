@@ -23,3 +23,8 @@ st.markdown(
 )  
 st.markdown("## 🚀 Start Exploring")  
 st.markdown("Discover the data behind the world’s energy and environmental challenges—navigate to the sections to dive deeper into each topic.")  
+
+st.markdown(
+    "### 📂 View Source Code\n"
+    "[GitHub Repository](https://github.com/Yugandhara-Yeolekar/Energy-Environment-Dashboard/)"
+)
