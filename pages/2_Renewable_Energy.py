@@ -6,7 +6,7 @@ import folium
 from streamlit_folium import st_folium
 
 # Apply Streamlit Theme
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Renewable Energy", layout="wide")
 theme = st.config.get_option("theme.base")
 # Set plotly template based on theme
 plot_template = "plotly_dark" if theme == "dark" else "simple_white"
