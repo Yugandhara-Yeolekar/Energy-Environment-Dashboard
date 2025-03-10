@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # Apply Streamlit Theme
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Climate Change", layout="wide")
 theme = st.config.get_option("theme.base")
 # Set plotly template based on theme
 plot_template = "plotly_dark" if theme == "dark" else "simple_white"
