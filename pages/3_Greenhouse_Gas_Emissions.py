@@ -583,7 +583,7 @@ with st.expander("Greenhouse Gas Emissions"):
     df7 = fetch_and_clean_data()
 
     st.markdown("## Share of Global Greenhouse Gas Emissions")
-    st.text("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper luctus mi quis consequat. Proin gravida massa sapien, et aliquam nulla aliquam quis. Curabitur eget enim eget arcu malesuada accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ipsum magna, congue maximus tellus ac, maximus pellentesque neque.""")
+    st.text("""Greenhouse gas emissions include carbon dioxide, methane and nitrous oxide from all sources, including land-usechange. They are measured in tonnes of carbon dioxide-equivalents over a 100-year timescale.""")
 
     tab1, tab2 = st.tabs(["Chart", "Map"])
     
