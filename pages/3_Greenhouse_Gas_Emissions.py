@@ -213,7 +213,7 @@ with st.expander("CO₂ Emissions"):
                 z_max=df1_map["Annual CO₂ Emissions"].max(),
                 colorbar_title="Annual CO₂ Emissions (Billion T)\n",
                 colorscale="ylgnbu",
-                hover_template="<b></b> {group}<br><b>Year:</b> %{customdata[1]}<br><b>Annual CO₂ Emissions:</b> %{z:.2f} Billion Tonnes<extra></extra>",
+                hover_template="<b>Country:</b> %{customdata[0]}<br><b>Year:</b> %{customdata[1]}<br><b>Annual CO₂ Emissions:</b> %{z:.2f} Billion Tonnes<extra></extra>",
                 customdata_cols=["Entity", "Year"],
                 title="Annual CO₂ Emissions by World Region"), use_container_width=True)
             st.caption("Data Source: Global Carbon Budget (2024) – with major processing by Our World in Data")
@@ -290,7 +290,7 @@ with st.expander("CO₂ Emissions"):
             z_max=20,
             colorbar_title="Per Capita CO₂ Emissions (T)\n",
             colorscale="ylgnbu",
-            hover_template="<b></b> {group}<br><b>Year:</b> %{customdata[1]}<br><b>Per Capita CO₂ Emissions:</b> %{z:.2f} Tonnes<extra></extra>",
+            hover_template="<b>Country:</b> %{customdata[0]}<br><b>Year:</b> %{customdata[1]}<br><b>Per Capita CO₂ Emissions:</b> %{z:.2f} Tonnes<extra></extra>",
             customdata_cols=["Country", "Year"],
             title="Per Capita CO₂ Emissions"), use_container_width=True)
         st.caption("Data Source: Global Carbon Budget (2024); Population based on various sources (2024) – with major processing by Our World in Data")
@@ -346,7 +346,7 @@ with st.expander("CO₂ Emissions"):
             z_max=20,
             colorbar_title="Global Share of CO₂ Emissions (%)\n",
             colorscale="ylgnbu",
-            hover_template="<b></b> {group}<br><b>Year:</b> %{customdata[1]}<br><b>Global Share of CO₂ Emissions:</b> %{z:.2f}%<extra></extra>",
+            hover_template="<b>Country:</b> %{customdata[0]}<br><b>Year:</b> %{customdata[1]}<br><b>Global Share of CO₂ Emissions:</b> %{z:.2f}%<extra></extra>",
             customdata_cols=["Country", "Year"],
             title="Share of Global CO₂ Emissions"), use_container_width=True)
         st.caption("Data Source: Global Carbon Budget (2024) – with major processing by Our World in Data")
@@ -407,7 +407,7 @@ with st.expander("CO₂ Emissions"):
             z_max=100,
             colorbar_title="Cumulative CO₂ Emissions (billion tonnes)\n",
             colorscale="ylgnbu",
-            hover_template="<b></b> {group}<br><b>Year:</b> %{customdata[1]}<br><b>Cumulative CO₂ Emissions:</b> %{z:.2f} billion tonnes<extra></extra>",
+            hover_template="<b>Country:</b> %{customdata[0]}<br><b>Year:</b> %{customdata[1]}<br><b>Cumulative CO₂ Emissions:</b> %{z:.2f} billion tonnes<extra></extra>",
             customdata_cols=["Country", "Year"],
             title="Cumulative CO₂ Emissions"), use_container_width=True)
         st.caption("Data Source: Global Carbon Budget (2024) – with major processing by Our World in Data")
@@ -478,7 +478,7 @@ with st.expander("Greenhouse Gas Emissions"):
                 z_max=df5_map["Annual GHG Emissions (CO₂ Eq)"].max(),
                 colorbar_title="Annual GHG Emissions (Billion Tonnes of CO₂ Eq)\n",
                 colorscale="purples",
-                hover_template="<b></b> {group}<br><b>Year:</b> %{customdata[1]}<br><b>Annual GHG Emissions:</b> %{z:.2f} Billion Tonnes (of CO₂ Eq)<extra></extra>",
+                hover_template="<b>Country:</b> %{customdata[0]}<br><b>Year:</b> %{customdata[1]}<br><b>Annual GHG Emissions:</b> %{z:.2f} Billion Tonnes (of CO₂ Eq)<extra></extra>",
                 customdata_cols=["Entity", "Year"],
                 title="Annual Greenhouse Emissions by World Region"), use_container_width=True)
             st.caption("Data Source: Jones et al. (2024) – with major processing by Our World in Data")
@@ -555,7 +555,7 @@ with st.expander("Greenhouse Gas Emissions"):
             z_max=30,
             colorbar_title="Per Capita Annual GHG Emissions (tonnes of CO₂ Eq)\n",
             colorscale="purples",
-            hover_template="<b></b> {group}<br><b>Year:</b> %{customdata[1]}<br><b>Per Capita Annual GHG Emissions:</b> %{z:.2f} Tonnes (of CO₂ Eq)<extra></extra>",
+            hover_template="<b>Country:</b> %{customdata[0]}<br><b>Year:</b> %{customdata[1]}<br><b>Per Capita Annual GHG Emissions:</b> %{z:.2f} Tonnes (of CO₂ Eq)<extra></extra>",
             customdata_cols=["Country", "Year"],
             title="Per Capita Greenhouse Emissions"), use_container_width=True)
         st.caption("Data Source: Jones et al. (2024); Population based on various sources (2024) – with major processing by Our World in Data")
@@ -613,7 +613,7 @@ with st.expander("Greenhouse Gas Emissions"):
             z_max=20,
             colorbar_title="Share of Global GHG Emissions (%)\n",
             colorscale="purples",
-            hover_template="<b></b> {group}<br><b>Year:</b> %{customdata[1]}<br><b>Share of Global GHG Emissions:</b> %{z:.2f}%<extra></extra>",
+            hover_template="<b>Country:</b> %{customdata[0]}<br><b>Year:</b> %{customdata[1]}<br><b>Share of Global GHG Emissions:</b> %{z:.2f}%<extra></extra>",
             customdata_cols=["Country", "Year"],
             title="Share of Global Greenhouse Gas Emissions"), use_container_width=True)
         st.caption("Data Source: Jones et al. (2024) – with major processing by Our World in Data")
