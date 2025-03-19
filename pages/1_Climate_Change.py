@@ -15,7 +15,7 @@ st.title("Climate Change")
 # -------------------------------------------------------------------------------------------------
 
 st.markdown("## Global Temperature Anomalies")
-st.text("""The deviation in a specific month's average surface temperature from the mean temperature of the same month during the period 1940-2025, measured in degrees Celsius.""")
+st.text("""The deviation in a specific month's average surface temperature from the mean temperature of the same month during the period 1990-2020, measured in degrees Celsius.""")
 
 # Fetch and clean data
 @st.cache_data
