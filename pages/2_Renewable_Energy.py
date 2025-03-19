@@ -62,15 +62,15 @@ def create_choropleth_map(df2):
     # Initial Frame
     fig2.add_trace(
         go.Choropleth(
-            locations=df2[df2['Year'] == years[0]]['Code'],
-            z=df2[df2['Year'] == years[0]]['Renewable Percentage'],
+            locations=df2[df2['Year'] == years[-1]]['Code'],
+            z=df2[df2['Year'] == years[-1]]['Renewable Percentage'],
             colorscale="Greens",
             zmin=zmin, zmax=zmax,
             colorbar=dict(title="Share of Energy Consumption from Renewables (%) \n"),
             hovertemplate="<b>Country:</b> %{customdata[0]}<br>" +
                           "<b>Year:</b> %{customdata[1]}<br>" +
                           "<b>Renewable Percentage:</b> %{z:.2f}%<extra></extra>",
-            customdata=df2[df2['Year'] == years[0]][['Country', 'Year']].values
+            customdata=df2[df2['Year'] == years[-1]][['Country', 'Year']].values
         )
     )
 
