@@ -22,7 +22,7 @@ pip install plotly folium streamlit pandas streamlit_folium
 
 ### **📥 Clone the Repository**
 ```bash
-git clone https://github.com/your-username/energy-environment-dashboard.git
+git clone https://github.com/Yugandhara-Yeolekar/Energy-Environment-Dashboard
 cd energy-environment-dashboard
 ```
 
